@@ -21,7 +21,7 @@
       "fileSuffix": ".cucumber"
     }
   },
-  "author": "RahulShetty",
+  "author": "AmitBhosale",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.2.0",
