@@ -1,100 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 2,
-    "passes": 1,
-    "pending": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
     "failures": 0,
-    "start": "2022-09-19T14:19:18.588Z",
-    "end": "2022-09-19T14:19:29.943Z",
-    "duration": 11355,
-    "testsRegistered": 2,
-    "passPercent": 100,
-    "pendingPercent": 50,
+    "start": "2022-09-25T20:28:39.057Z",
+    "end": "2022-09-25T20:28:39.063Z",
+    "duration": 6,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "adfc7fe7-f9ee-4d59-803e-4985df2bf4d6",
-      "title": "",
-      "fullFile": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
-      "file": "cypress\\integration\\examples\\BDD\\ecommerce.feature",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ecd056ed-0b20-4786-9c8d-ab4a479e75ed",
-          "title": "End to end Ecommerce validation",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Ecommerce products delivery",
-              "fullTitle": "End to end Ecommerce validation Ecommerce products delivery",
-              "timedOut": null,
-              "duration": 191,
-              "state": "pending",
-              "speed": null,
-              "pass": false,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function() {\n    return this.skip();\n  });",
-              "err": {},
-              "uuid": "79c722d1-196a-4da7-976f-e5d798804e0b",
-              "parentUUID": "ecd056ed-0b20-4786-9c8d-ab4a479e75ed",
-              "isHook": false,
-              "skipped": true
-            },
-            {
-              "title": "Filling the form to shop",
-              "fullTitle": "End to end Ecommerce validation Filling the form to shop",
-              "timedOut": null,
-              "duration": 4172,
-              "state": "passed",
-              "speed": "fast",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach(step =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
-              "err": {},
-              "uuid": "4207610e-f35b-46ae-9ab3-c28db2318c2a",
-              "parentUUID": "ecd056ed-0b20-4786-9c8d-ab4a479e75ed",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "4207610e-f35b-46ae-9ab3-c28db2318c2a"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [
-            "79c722d1-196a-4da7-976f-e5d798804e0b"
-          ],
-          "duration": 4363,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

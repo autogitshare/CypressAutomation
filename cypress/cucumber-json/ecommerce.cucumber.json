@@ -9,14 +9,14 @@
     "uri": "ecommerce.feature",
     "elements": [
       {
-        "id": "end-to-end-ecommerce-validation;filling-the-form-to-shop",
+        "id": "end-to-end-ecommerce-validation;ecommerce-products-delivery",
         "keyword": "Scenario",
-        "line": 12,
-        "name": "Filling the form to shop",
+        "line": 5,
+        "name": "Ecommerce products delivery",
         "tags": [
           {
-            "name": "@Smoke",
-            "line": 11
+            "name": "@Regression",
+            "line": 4
           }
         ],
         "type": "scenario",
@@ -24,58 +24,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 13,
+            "line": 6,
             "name": "I open ECommerce Page",
             "result": {
               "status": "passed",
-              "duration": 2475000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "name",
-                      "gender"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "bobz",
-                      "Male"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I fill the form details",
-            "result": {
-              "status": "passed",
-              "duration": 498000000
+              "duration": 1227000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "validate the forms behaviour",
+            "keyword": "When ",
+            "line": 7,
+            "name": "I add items to Cart",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 1268000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 19,
-            "name": "select the Shop Page",
+            "line": 8,
+            "name": "Validate the total prices",
             "result": {
               "status": "passed",
-              "duration": 1229000000
+              "duration": 113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "select the country submit and verify Thankyou",
+            "result": {
+              "status": "passed",
+              "duration": 5923000000
             }
           }
         ]

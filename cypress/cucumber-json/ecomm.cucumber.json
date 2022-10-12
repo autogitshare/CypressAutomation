@@ -1,0 +1,84 @@
+[
+  {
+    "description": "    application Regression1",
+    "keyword": "Feature",
+    "name": "End to end Ecommerce validation",
+    "line": 1,
+    "id": "end-to-end-ecommerce-validation",
+    "tags": [],
+    "uri": "ecomm.feature",
+    "elements": [
+      {
+        "id": "end-to-end-ecommerce-validation;filling-the-form-to-shop",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Filling the form to shop",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open ECommerce Page",
+            "result": {
+              "status": "passed",
+              "duration": 1513000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "bobz",
+                      "Female"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I fill the form details",
+            "result": {
+              "status": "failed",
+              "duration": 99000000,
+              "error_message": "TypeError: cucumberJson.attach is not a function\n    at HomePage.fillFormDetails (cypress/support/pageObjects/HomePage.js:46:21)\n    at Context.eval (cypress/integration/examples/BDD/ecomm/newStepDef.js:18:13)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:217:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:26:0)\nFrom previous event:\n    at Context.thenFn (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:138985:63)\n    at Context.then (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:139407:21)\n    at wrapped (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:157189:19)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:155929:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:155907:17)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:156060:19)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:156089:16)\nFrom previous event:\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:156060:39)\nFrom previous event:\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:171260:77)\nFrom previous event:\n    at CommandQueue.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:171255:21)\n    at CommandQueue.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:156123:15)\n    at $Cy.runQueue (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:157155:14)\n    at cy.<computed> [as then] (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:157264:12)\n    at runnable.fn (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:157447:19)\n    at callFn (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107881:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107868:7)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164703:30)\nFrom previous event:\n    at Object.onRunnableRun (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164688:53)\n    at $Cypress.action (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:153582:28)\n    at Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:162351:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108540:10)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108666:12)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108449:14)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108459:7)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108361:14)\n    at Hook.<anonymous> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108422:7)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164594:24)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164623:13)\nFrom previous event:\n    at onNext (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164620:59)\n    at done (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107821:5)\n    at callFn (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107904:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107868:7)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164703:30)\nFrom previous event:\n    at Object.onRunnableRun (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164688:53)\n    at $Cypress.action (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:153582:28)\n    at Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:162351:13)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108383:10)\n    at Hook.<anonymous> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108422:7)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164594:24)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164623:13)\nFrom previous event:\n    at onNext (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164620:59)\n    at done (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107821:5)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107886:11)\nFrom previous event:\n    at callFn (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107884:14)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:107868:7)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164703:30)\nFrom previous event:\n    at Object.onRunnableRun (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:164688:53)\n    at $Cypress.action (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:153582:28)\n    at Runnable.run (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:162351:13)\n    at next (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108383:10)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:108427:5)\n    at timeslice (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:102353:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "validate the forms behaviour",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "select the Shop Page",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
